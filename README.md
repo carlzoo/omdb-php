@@ -46,6 +46,9 @@ omdb_movie Object
 Either the title or the ID must be filled otherwise there will be no results
 
 Features to be added:
+
 Search
+
 Rottentomatoes info
+
 Short or extended plot
