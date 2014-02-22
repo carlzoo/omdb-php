@@ -12,35 +12,35 @@ Example:
 
 >
 <?php
-require_once("omdb.class.php");
-require_once("omdb_movie.class.php");
-print_r(omdb_movie::getmovie("Freight","2010",""));
+require_once("omdb.class.php"); <br>
+require_once("omdb_movie.class.php"); <br>
+print_r(omdb_movie::getmovie("Freight","2010","")); <br>
 ?>
 
 will return:
 
 >
-omdb_movie Object
-(
-    [title] => Freight
-    [year] => 2010
-    [rating] => N/A
-    [releasedate] => N/A
-    [runtime] => 92 min
-    [genre] => Action, Crime, Drama
-    [director] => Stuart St. Paul
-    [writer] => Stuart St. Paul
-    [actors] => Billy Murray, Craig Fairbrass, Laura Aikman, Sam Kennard
-    [plot] => A Russian gang in the UK traffic Eastern Europeans then enslave them, the women to sex, the men to illegal fights. They cross a local businessman and a war escalates.
-    [language] => English
-    [country] => UK
-    [awards] => 1 win.
-    [poster] => <img src=' http://ia.media-imdb.com/images/M/MV5BMTg4MDg4ODAwOV5BMl5BanBnXkFtZTcwMjI4OTk5Mw@@._V1_SX300.jpg' >
-    [metascore] => N/A
-    [imdbrating] => 4.2
-    [imdbvotes] => 607
-    [imdbid] => tt1376404
-    [type] => movie
+omdb_movie Object <br>
+( <br>
+    [title] => Freight <br>
+    [year] => 2010 <br>
+    [rating] => N/A <br>
+    [releasedate] => N/A <br>
+    [runtime] => 92 min <br>
+    [genre] => Action, Crime, Drama <br>
+    [director] => Stuart St. Paul <br>
+    [writer] => Stuart St. Paul <br>
+    [actors] => Billy Murray, Craig Fairbrass, Laura Aikman, Sam Kennard <br>
+    [plot] => A Russian gang in the UK traffic Eastern Europeans then enslave them, the women to sex, the men to illegal fights. They cross a local businessman and a war escalates. <br>
+    [language] => English <br>
+    [country] => UK <br>
+    [awards] => 1 win. <br>
+    [poster] => <img src=' http://ia.media-imdb.com/images/M/MV5BMTg4MDg4ODAwOV5BMl5BanBnXkFtZTcwMjI4OTk5Mw@@._V1_SX300.jpg' > <br>
+    [metascore] => N/A <br>
+    [imdbrating] => 4.2 <br>
+    [imdbvotes] => 607 <br>
+    [imdbid] => tt1376404 <br>
+    [type] => movie <br>
 )
 
 Either the title or the ID must be filled otherwise there will be no results
