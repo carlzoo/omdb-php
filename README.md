@@ -11,9 +11,8 @@ Searches for movie and returns data in an object:
 Example:
 
 >
-<?php
-require_once("omdb.class.php"); <br>
-require_once("omdb_movie.class.php"); <br>
+<?php <br>
+include("omdb.php") <br>
 print_r(omdb_movie::getmovie("Freight","2010","")); <br>
 ?>
 
