@@ -141,8 +141,6 @@ Either the title or the ID must be filled otherwise there will be no results
 
 Features to be added:
 
-<s>Search</s>
-
 Rottentomatoes info
 
 Short or extended plot
