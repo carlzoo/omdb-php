@@ -10,21 +10,22 @@ Searches for movie and returns data in an object:
 
 Example:
 
->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <?php
-include("omdb.php"); <br>
-$movie1=array('title'=>'Finding Neverland','rt'=>'true'); <br>
-$movie2=array('imdbid'=>'tt1285016'); <br>
-$movie3=array('title'=>'Star Wars','year'=>2005); <br>
+include("omdb.php");
+$movie1=array('title'=>'Finding Neverland','rt'=>'true'); 
+$movie2=array('imdbid'=>'tt1285016'); 
+$movie3=array('title'=>'Star Wars','year'=>2005); 
 echo "Results for movie1: <br>\n"; 
-print_r(omdb_movie::getmovie($movie1)); <br>
+print_r(omdb_movie::getmovie($movie1)); 
 echo "\nResults for movie2: <br>\n"; 
-print_r(omdb_movie::getmovie($movie2)); <br>
+print_r(omdb_movie::getmovie($movie2)); 
 echo "\nResults for a search: <br>\n"; 
-print_r(omdb_search::findmovie("lion king")); <br>
+print_r(omdb_search::findmovie("lion king")); 
 echo "\nResults for movie3: <br>\n"; 
-print_r(omdb_movie::getmovie($movie3)); <br>
+print_r(omdb_movie::getmovie($movie3));
 ?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 will return:
 
