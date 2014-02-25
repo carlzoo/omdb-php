@@ -22,29 +22,32 @@ class omdb{
 			}
 		$data=json_decode($response);
 		if($data->Response=="False"){
-			die("Error: " . $data->Error . "<br>\n");
+			echo("Error: " . $data->Error . "<br>\n");
+			return false;
 		}
 		else{
 			return $data;
 		}
 	}
 	
-	//$params is an array
-	static function doquery($params){
+	//$suburl is the second part of the url
+	/*static function doquery($suburl){
 		$year="y=" . $params['year'];
 		$imdbid="i=" . $params['imdbid'];
 		$title="t=" . $params['title'];
-		$title=str_replace(" ","+",$title); //necessary, otherwise the search will result in a 400 error response
-		$url=self::apiurl . $year . "&" . $imdbid . "&" . $title;
+		$plot="plot=" . $params['plot'];
+		$rt="tomatoes=" . (string)$params['rt'];
+		$url=self::apiurl . $year . "&" . $imdbid . "&" . $title . "&" . $rt . "&" . $plot;
+		$url=str_replace(" ","+",$url); //necessary, otherwise the search will result in a 400 error response
 		$data=self::getdata($url);
 		return $data;
-	}
+	}*/
 	
 	//$term must be nonempty otherwise no results will be returned
 	static function search($term){
-		$term=str_replace(" ","+",$term); //necessary, otherwise the search will result in a 400 error response
 		$q="s=" . $term;
 		$url=self::apiurl . $q;
+		$url=str_replace(" ","+",$url); //necessary, otherwise the search will result in a 400 error response
 		$data=self::getdata($url);
 		return $data;
 	}
