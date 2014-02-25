@@ -1,5 +1,5 @@
 <?php
-/*PHP class for OMDB
+/*PHP wrapper for OMDB
 Author: Carl Zhou
 Version:1.02
 
