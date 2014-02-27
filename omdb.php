@@ -1,7 +1,10 @@
 <?php
 /*PHP wrapper for OMDB
 Author: Carl Zhou
-Version:1.02
+Version:1.03
+
+Changes in 1.03:
+-fixed error in curlopt_headers
 
 Changes in 1.02:
 -changed implementation of getting movie id, to allow more options
