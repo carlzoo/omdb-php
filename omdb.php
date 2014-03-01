@@ -1,6 +1,6 @@
 <?php
 /*PHP wrapper for OMDB
-Author: Carl Zhou
+Author: Wansumkok
 Version:1.03
 
 Changes in 1.03:
